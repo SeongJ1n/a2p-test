@@ -37,6 +37,10 @@ body {
       font-size: 14px;
       padding: 22px 0px 23px 45px;
       color: $color-lighten;
+      transition: .15s all ease;
+    }
+    .list-item:hover {
+      color: $color-light;
     }
     .active {
       font-family: 'font-bold';

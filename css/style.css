@@ -233,7 +233,8 @@ img {
 .section-azone #map {
   width: 100%;
   height: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #fbfcfc; }
 
 /* 맵 마커 */
 .arrow-box {
@@ -322,7 +323,10 @@ body {
       font-family: 'font-regular';
       font-size: 14px;
       padding: 22px 0px 23px 45px;
-      color: #a7aab1; }
+      color: #a7aab1;
+      transition: .15s all ease; }
+    .nav .inline-list .list-item:hover {
+      color: #7e8187; }
     .nav .inline-list .active {
       font-family: 'font-bold';
       color: #272b38; }
