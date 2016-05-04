@@ -15,7 +15,7 @@
         </div>
         <div class="col col-9">
           <ul class="inline-list">
-            <li id="a2p" class="list-item">서비스소개</li>
+            <li id="a2p" class="list-item active">서비스소개</li>
             <li id="ad" class="list-item">광고제휴</li>
             <li id="printing" class="list-item">솔루션제휴</li>
             <li id="company" class="list-item">회사소개</li>
@@ -30,8 +30,8 @@
     <div class="container">
       <div class="row">
         <div class="col col-12">
-          <h1 class="title">대학 과제, PPT, 레포트 무료 프린팅하세요!</h1>
-          <h4 class="subtitle">앱에서 광고 보고, 무료 포인트 받고, 학교 복사실에서 프린팅하면 끝!</h3>
+          <h1 class="header">대학 과제, PPT, 레포트 무료 프린팅하세요!</h1>
+          <h4 class="header-description">앱에서 광고 보고, 무료 포인트 받고, 학교 복사실에서 프린팅하면 끝!</h3>
           <div class="icon-input icon-input-phone">
             <div class="row">
               <div class="col col-2">
@@ -135,24 +135,24 @@
     <div class="container">
       <div class="row">
         <div class="col col-12">
-          <div id="map" style="width:500px;height:400px;"></div>
+          <h2 class="title">우리 학교 무료 프린팅존 찾기</h2>
+          <p class="subtitle">전국 125개 대학교 4,448개 무료 프린팅존이 있어요.</p>
+          <div class="divider"></div>
+          <div class="wrapper-map">
+            <div class="input"></div>
+            <div id="map"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=66f42183ab104127e89ad3db0ded7af0"></script>
+<script src="js/default.js"></script>
 
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=66f42183ab104127e89ad3db0ded7af0"></script>
-<script>
-  var container = document.getElementById('map');
-  var options = {
-    center: new daum.maps.LatLng(33.450701, 126.570667),
-    level: 3
-  };
 
-  var map = new daum.maps.Map(container, options);
-</script>
+
 
 
 

@@ -58,30 +58,46 @@ body {
 h1 {
   font-family: 'font-regular';
   font-size: 48px;
+  letter-spacing: -.03em;
+  word-spacing: .09em;
   color: white;
 }
 
 h2 {
   font-family: 'font-light';
   font-size: 40px;
+  letter-spacing: -.03em;
+  word-spacing: .09em;
   color: $color-dark;
 }
 
 h3 {
   font-family: 'font-light';
   font-size: 30px;
+  letter-spacing: -.02em;
+  word-spacing: .09em;
   color: white;
 }
 
 h4 {
   font-family: 'font-bold';
   font-size: 20px;
+  letter-spacing: -.025em;
+  word-spacing: .09em;
   color: $color-lighten;
+}
+
+h5 {
+  font-family: 'font-light';
+  font-size: 10px;
+  color: white;
 }
 
 p {
   font-family: 'font-regular';
   font-size: 16px;
+  letter-spacing: -.025em;
+  word-spacing: .09em;
   line-height: 1.6em;
   color: $color-lighten;
 }

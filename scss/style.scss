@@ -2,7 +2,7 @@
 @import 'grid';
 @import 'color';
 @import 'type';
-@import 'elements/input';
+@import 'elements/elements';
 
 body {
   padding-top: 60px;
@@ -13,6 +13,7 @@ body {
   height: 4px;
   margin: 0 auto;
   margin-top: 25px;
+  margin-bottom: 55px;
   background-color: $color-border;
 }
 
@@ -23,7 +24,7 @@ body {
   width: 100%;
   height: 60px;
   background-color: white;
-  border-bottom: 1.5px solid $color-primary;
+  border-bottom: 1px solid $color-primary;
   z-index: 999;
   .nav-logo {
     margin-top: 22px;
@@ -37,6 +38,10 @@ body {
       padding: 24px 0px 21px 45px;
       color: $color-lighten;
     }
+    .active {
+      font-family: 'font-bold';
+      color: $color-dark;
+    }
   }
 }
 
@@ -44,16 +49,22 @@ body {
 .section {
   position: relative;
   text-align: center;
+  padding-top: 80px;
+  padding-bottom: 110px;
+  .subtitle {
+    margin-top: 12px;
+  }
 }
 
 /* section-intro */
 .section-intro {
   height: 630px;
+  padding: 0;
   background: url('../img/section-intro-bg.png') center 0 no-repeat;
-  .title {
+  .header {
     margin-top: 190px;
   }
-  .subtitle {
+  .header-description {
     margin-top: 10px;
     font-family: 'font-regular';
   }
@@ -70,30 +81,22 @@ body {
   height: 100px;
   background-color: rgba(39,43,56,.8);
   .stat-data {
-    margin-top: 24px;
+    margin-top: 23px;
   }
   .stat-data-caption {
-    margin-top: 8px;
+    margin-top: 6px;
   }
 }
 
 /* section-howto */
 .section-howto {
-  padding-top: 80px;
-  padding-bottom: 110px;
-  .subtitle {
-    margin-top: 12px;
-  }
-  .wrapper-howto {
-    margin-top: 55px;
-    .col-4 {
-      .howto-title {
-        margin-top: 25px;
-        color: $color-dark;
-      }
-      .howto-description {
-        margin-top: 16px;
-      }
+  .col-4 {
+    .howto-title {
+      margin-top: 25px;
+      color: $color-dark;
+    }
+    .howto-description {
+      margin-top: 16px;
     }
   }
 }
@@ -101,6 +104,7 @@ body {
 /* section-merit */
 .section-merit {
   height: 360px;
+  padding: 0;
   background: url('../img/section-merit-bg.png') center 0 no-repeat;
   .wrapper-merit {
     margin-top: 85px;
@@ -119,6 +123,8 @@ body {
     }
   }
 }
+
+/* section-azone */
 
 
 
