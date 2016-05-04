@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.col:before,
+.col:after {
+  content: " ";
+  display: table; }
+
+.container:after,
+.row:after,
+.col:after {
+  clear: both; }
+
+.container {
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.col {
+  position: relative;
+  display: inline-block;
+  float: left;
+  min-height: 1px; }
+
+.col-12 {
+  width: 100%; }
+
+.col-11 {
+  width: 91.66666666666666%; }
+
+.col-10 {
+  width: 83.33333333333334%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-8 {
+  width: 66.66666666666666%; }
+
+.col-7 {
+  width: 58.333333333333336%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-5 {
+  width: 41.66666666666667%; }
+
+.col-4 {
+  width: 33.33333333333333%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-2 {
+  width: 16.666666666666664%; }
+
+.col-1 {
+  width: 8.333333333333332%; }
+
+@font-face {
+  font-family: 'font-bold';
+  font-weight: 700;
+  src: local("SpoqaHanSans-Bold"), local("SpoqaHanSans-Bold"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Bold/SpoqaHanSans-Bold.eot) format("eot"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Bold/SpoqaHanSans-Bold.svg) format("svg"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Bold/SpoqaHanSans-Bold.ttf) format("truetype"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Bold/SpoqaHanSans-Bold.woff) format("woff"); }
+@font-face {
+  font-family: 'font-regular';
+  font-weight: 400;
+  src: local("SpoqaHanSans-Regular"), local("SpoqaHanSans-Regular"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Regular/SpoqaHanSans-Regular.eot) format("eot"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Regular/SpoqaHanSans-Regular.svg) format("svg"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Regular/SpoqaHanSans-Regular.ttf) format("truetype"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Regular/SpoqaHanSans-Regular.woff) format("woff"); }
+@font-face {
+  font-family: 'font-light';
+  font-weight: 200;
+  src: local("SpoqaHanSans-Thin"), local("SpoqaHanSans-Thin"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Thin/SpoqaHanSans-Thin.eot) format("eot"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Thin/SpoqaHanSans-Thin.svg) format("svg"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Thin/SpoqaHanSans-Thin.ttf) format("truetype"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Thin/SpoqaHanSans-Thin.woff) format("woff"); }
+body {
+  font-family: 'font-regular', 'Apple SD Gothic Neo', Sans-serif;
+  font-size: 16px; }
+
+h1 {
+  font-family: 'font-regular';
+  font-size: 48px;
+  color: white; }
+
+h2 {
+  font-family: 'font-light';
+  font-size: 40px;
+  color: #272b38; }
+
+h3 {
+  font-family: 'font-light';
+  font-size: 30px;
+  color: white; }
+
+h4 {
+  font-family: 'font-bold';
+  font-size: 20px;
+  color: #a7aab1; }
+
+p {
+  font-family: 'font-regular';
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #a7aab1; }
+
+.icon-input-phone {
+  display: inline-block;
+  width: 420px;
+  height: 60px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: white; }
+  .icon-input-phone .icon-phone {
+    border-right: 1px solid #e2e3e6; }
+  .icon-input-phone .input {
+    width: 100%;
+    height: 100%;
+    margin-top: 19px;
+    padding-left: 14px;
+    font-size: 16px;
+    border: 0;
+    outline: none; }
+
+body {
+  padding-top: 60px; }
+
+.divider {
+  width: 40px;
+  height: 4px;
+  margin: 0 auto;
+  margin-top: 25px;
+  background-color: #e2e3e6; }
+
+/* GNB */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1.5px solid #ff004e;
+  z-index: 999; }
+  .nav .nav-logo {
+    margin-top: 22px; }
+  .nav .inline-list {
+    float: right; }
+    .nav .inline-list .list-item {
+      float: left;
+      font-family: 'font-regular';
+      font-size: 14px;
+      padding: 24px 0px 21px 45px;
+      color: #a7aab1; }
+
+/* Section Default */
+.section {
+  position: relative;
+  text-align: center; }
+
+/* section-intro */
+.section-intro {
+  height: 630px;
+  background: url("../img/section-intro-bg.png") center 0 no-repeat; }
+  .section-intro .title {
+    margin-top: 190px; }
+  .section-intro .subtitle {
+    margin-top: 10px;
+    font-family: 'font-regular'; }
+  .section-intro .icon-input {
+    margin-top: 34px; }
+
+.section-intro-stat {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(39, 43, 56, 0.8); }
+  .section-intro-stat .stat-data {
+    margin-top: 24px; }
+  .section-intro-stat .stat-data-caption {
+    margin-top: 8px; }
+
+/* section-howto */
+.section-howto {
+  padding-top: 80px;
+  padding-bottom: 110px; }
+  .section-howto .subtitle {
+    margin-top: 12px; }
+  .section-howto .wrapper-howto {
+    margin-top: 55px; }
+    .section-howto .wrapper-howto .col-4 .howto-title {
+      margin-top: 25px;
+      color: #272b38; }
+    .section-howto .wrapper-howto .col-4 .howto-description {
+      margin-top: 16px; }
+
+/* section-merit */
+.section-merit {
+  height: 360px;
+  background: url("../img/section-merit-bg.png") center 0 no-repeat; }
+  .section-merit .wrapper-merit {
+    margin-top: 85px; }
+    .section-merit .wrapper-merit .merit-img {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid #1b1d23; }
+    .section-merit .wrapper-merit .merit-title {
+      margin-top: 20px;
+      color: white; }
+    .section-merit .wrapper-merit .merit-description {
+      margin-top: 12px; }
+
+/*# sourceMappingURL=style.css.map */

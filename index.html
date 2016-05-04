@@ -1,35 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>test</title>
-
-  <style type="text/css">
-
-  body { padding:0; margin:0; overflow-x:hidden;}
-  .container { position: relative; }
-  .bg { margin: auto;
-    max-width: 1920px;
-    min-width: 1200px;
-    position: absolute;
-    top:0; right: -50%; left: -50%;
-    z-index: 10;
-  }
-  .gnb { margin: auto;
-    max-width: 1920px;
-    min-width: 1200px;
-    position: fixed;
-    top:0; right: -50%; left: -50%;
-    z-index: 999;
-  }
-
-  </style>
-
+  <title>애드투페이퍼</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <div class="nav">
     <div class="container">
-      <img class="gnb" src="1.jpg">
-      <img class="bg" src="4.jpg">
+      <div class="row">
+        <div class="col col-3">
+          <img class="nav-logo" src="img/logo.png" alt="애드투페이퍼" title="애드투페이퍼" width="130" height="18">
+        </div>
+        <div class="col col-9">
+          <ul class="inline-list">
+            <li id="a2p" class="list-item">서비스소개</li>
+            <li id="ad" class="list-item">광고제휴</li>
+            <li id="printing" class="list-item">솔루션제휴</li>
+            <li id="company" class="list-item">회사소개</li>
+            <li id="login" class="list-item">로그인</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="section section-intro">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <h1 class="title">대학 과제, PPT, 레포트 무료 프린팅하세요!</h1>
+          <h4 class="subtitle">앱에서 광고 보고, 무료 포인트 받고, 학교 복사실에서 프린팅하면 끝!</h3>
+          <div class="icon-input icon-input-phone">
+            <div class="row">
+              <div class="col col-2">
+                <img class="icon icon-phone" src="img/icon-input.png" width="70" height="60">
+              </div>
+              <div class="col col-10">
+                <input class="input" placeholder="휴대폰 문자로 앱 다운로드 URL을 받아보세요."></input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-intro-stat">
+          <div class="container">
+            <div class="row">
+              <div class="col col-12">
+                <div class="col col-4">
+                  <h3 class="stat-data">547,390명</h3>
+                  <p class="stat-data-caption">가입한 대학생 수</p>
+                </div>
+                <div class="col col-4">
+                  <h3 class="stat-data">약 4,000만장</h3>
+                  <p class="stat-data-caption">무료 프린팅 장수</p>
+                </div>
+                <div class="col col-4">
+                  <h3 class="stat-data">약 20억원</h3>
+                  <p class="stat-data-caption">지금까지 아낀 금액</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-howto">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <h2 class="title">무료 프린팅은 어떻게 하나요?</h2>
+          <p class="subtitle">애드투페이퍼로 대학생활 4년동안 무료 프린팅 할 수 있어요.</p>
+          <div class="divider"></div>
+          <div class="wrapper-howto">
+            <div class="col col-4">
+              <img src="img/howto-img-1.png" width="270" height="210">
+              <h4 class="howto-title">앱에서 광고 보고</h4>
+              <p class="howto-description">앱에서 광고를 보면 프린팅 포인트를 드려요.</br>
+                                           매일 출석 포인트를 모을 수 있고 다양한 공모전,</br>
+                                           채용, 대외활동 정보들도 많이 있답니다!</p>
+            </div>
+            <div class="col col-4">
+              <img src="img/howto-img-2.png" width="270" height="210">
+              <h4 class="howto-title">학교 프린팅 존 찾아가서</h4>
+              <p class="howto-description">프린팅 포인트를 쓸 수 있는 복사실을 찾아보세요.</br>
+                                           프린팅존에 가면 사용방법이 자세히 나와있답니다.</br>
+                                           없는 학교라면, 복사실에 요청해보세요!</p>
+            </div>
+            <div class="col col-4">
+              <img src="img/howto-img-3.png" width="270" height="210">
+              <h4 class="howto-title">프린팅 포인트로 인쇄해요!</h4>
+              <p class="howto-description">적립한 포인트로 프린팅존에서 인쇄해보세요!</br>
+                                           전용 프로그램으로 쉽고 안전하게 인쇄하고,</br>
+                                           사용내역을 앱에서 관리해보세요.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-merit">
+    <div class="container">
+      <div class="row">
+        <div class="wrapper-merit">
+          <div class="col col-3">
+            <img class="merit-img" src="img/merit-attendance.png" width="100" height="100">
+            <h4 class="merit-title">출석 애딧</h4>
+            <p class="merit-description">매일매일 앱을 켜기만 해도</br>무료 포인트를 드려요.</p>
+          </div>
+          <div class="col col-3">
+            <img class="merit-img" src="img/merit-info.png" width="100" height="100">
+            <h4 class="merit-title">유용 정보</h4>
+            <p class="merit-description">취업, 대외활동, 공모전</br>정보들을 받아보세요.</p>
+          </div>
+          <div class="col col-3">
+            <img class="merit-img" src="img/merit-search.png" width="100" height="100">
+            <h4 class="merit-title">복사실 검색</h4>
+            <p class="merit-description">우리 학교 무료 프린팅존을</br>앱으로 쉽게 찾아보세요.</p>
+          </div>
+          <div class="col col-3">
+            <img class="merit-img" src="img/merit-mobile.png" width="100" height="100">
+            <h4 class="merit-title">앱만 있으면 OK!</h4>
+            <p class="merit-description">프린트카드가 필요없어요.</br>동전 찾기도 이제 그만!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-azone">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div id="map" style="width:500px;height:400px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey= 66f42183ab104127e89ad3db0ded7af0"></script>
+  <script>
+    var container = document.getElementById('map');
+    var options = {
+      center: new daum.maps.LatLng(33.450701, 126.570667),
+      level: 3
+    };
+
+    var map = new daum.maps.Map(container, options);
+  </script>
 </body>
 </html>

@@ -1,0 +1,144 @@
+@import 'reset';
+@import 'grid';
+@import 'color';
+@import 'type';
+@import 'elements/input';
+
+body {
+  padding-top: 60px;
+}
+
+.divider {
+  width: 40px;
+  height: 4px;
+  margin: 0 auto;
+  margin-top: 25px;
+  background-color: $color-border;
+}
+
+/* GNB */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1.5px solid $color-primary;
+  z-index: 999;
+  .nav-logo {
+    margin-top: 22px;
+  }
+  .inline-list {
+    float: right;
+    .list-item {
+      float: left;
+      font-family: 'font-regular';
+      font-size: 14px;
+      padding: 24px 0px 21px 45px;
+      color: $color-lighten;
+    }
+  }
+}
+
+/* Section Default */
+.section {
+  position: relative;
+  text-align: center;
+}
+
+/* section-intro */
+.section-intro {
+  height: 630px;
+  background: url('../img/section-intro-bg.png') center 0 no-repeat;
+  .title {
+    margin-top: 190px;
+  }
+  .subtitle {
+    margin-top: 10px;
+    font-family: 'font-regular';
+  }
+  .icon-input {
+    margin-top: 34px;
+  }
+}
+
+.section-intro-stat {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(39,43,56,.8);
+  .stat-data {
+    margin-top: 24px;
+  }
+  .stat-data-caption {
+    margin-top: 8px;
+  }
+}
+
+/* section-howto */
+.section-howto {
+  padding-top: 80px;
+  padding-bottom: 110px;
+  .subtitle {
+    margin-top: 12px;
+  }
+  .wrapper-howto {
+    margin-top: 55px;
+    .col-4 {
+      .howto-title {
+        margin-top: 25px;
+        color: $color-dark;
+      }
+      .howto-description {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+/* section-merit */
+.section-merit {
+  height: 360px;
+  background: url('../img/section-merit-bg.png') center 0 no-repeat;
+  .wrapper-merit {
+    margin-top: 85px;
+    .merit-img {
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    border: 1px solid $color-darken;
+    }
+    .merit-title {
+      margin-top: 20px;
+      color: white;
+    }
+    .merit-description {
+      margin-top: 12px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
