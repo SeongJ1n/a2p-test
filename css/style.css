@@ -370,6 +370,8 @@ body {
   margin-top: 25px;
   color: #272b38; }
 .section-howto .col-4 .howto-description {
+  max-width: 310px;
+  margin: 0 auto;
   margin-top: 16px; }
 
 /* section-merit */
