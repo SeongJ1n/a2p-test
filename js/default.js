@@ -1,5 +1,6 @@
 /* Daum map */
 
+
 var container = document.getElementById('map');
 var options = {
   center: new daum.maps.LatLng(37.498, 127.0276),
