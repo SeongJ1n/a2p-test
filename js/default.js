@@ -1,4 +1,3 @@
-
 var univ = '007030';
 
 var latitude = coord_data[univ][0].latitude;
