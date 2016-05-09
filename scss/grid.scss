@@ -79,7 +79,7 @@
   width: 8.333333333333332%;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-device-width: 480px) {
   .col-3 {
     width: 50%;
   }

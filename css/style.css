@@ -121,7 +121,7 @@ table {
 .col-1 {
   width: 8.333333333333332%; }
 
-@media (max-width: 768px) {
+@media only screen and (max-device-width: 480px) {
   .col-3 {
     width: 50%; }
 
@@ -407,7 +407,6 @@ body {
   .section-intro-stat .stat-data-caption {
     margin-top: 6px; }
 
-/* section-intro media */
 /* section-howto */
 .section-howto .col-4 .howto-title {
   margin-top: 25px;
@@ -508,14 +507,6 @@ body {
     .section-press .wrapper-pagenation .active {
       background-color: #272b38; }
 
-/* section-press media */
-@media (max-width: 768px) {
-  .section-press .arrow-prev {
-    margin-left: 0; }
-  .section-press .arrow-next {
-    margin-right: 0; }
-  .section-press .wrapper-pagenation {
-    bottom: 40px; } }
 /* section-join */
 .section-join {
   height: 400px;
@@ -551,11 +542,6 @@ body {
   .section-targeting .col-6 + .col-6 {
     border-left: 1px solid #e2e3e6; }
 
-/* section-targeting media */
-@media (max-width: 768px) {
-  .section-targeting .col-6 + .col-6 {
-    margin-top: -1px;
-    border-top: 1px solid #e2e3e6; } }
 /* footer */
 .footer {
   height: 200px;
@@ -573,8 +559,22 @@ body {
       font-size: 12px;
       line-height: 1.8em; }
 
-/* footer media */
-@media (max-width: 768px) {
+/*  mobile-device */
+@media only screen and (max-device-width: 480px) {
+  /* section-press media */
+  .section-press .arrow-prev {
+    margin-left: 0; }
+  .section-press .arrow-next {
+    margin-right: 0; }
+  .section-press .wrapper-pagenation {
+    bottom: 40px; }
+
+  /* section-targeting media */
+  .section-targeting .col-6 + .col-6 {
+    margin-top: -1px;
+    border-top: 1px solid #e2e3e6; }
+
+  /* footer media */
   .footer {
     height: 100%;
     padding-bottom: 40px; }
