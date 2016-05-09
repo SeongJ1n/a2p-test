@@ -36,6 +36,7 @@
 
 .col {
   position: relative;
+  height: 100%;
   display: inline-block;
   float: left;
   min-height: 1px;
@@ -78,7 +79,17 @@
   width: 8.333333333333332%;
 }
 
-
+@media (max-width: 768px) {
+  .col-3 {
+    width: 50%;
+  }
+  .col-4 {
+    width: 100%;
+  }
+  .col-6 {
+    width: 100%;
+  }
+}
 
 
 

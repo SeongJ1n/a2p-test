@@ -11,7 +11,7 @@
     <div class="container">
       <div class="row">
         <div class="col col-3">
-          <img class="nav-logo" src="img/logo.png" alt="애드투페이퍼" title="애드투페이퍼" width="119" height="16">
+          <img class="nav-logo" src="img/logo.png" alt="애드투페이퍼" title="애드투페이퍼" width="119" >
         </div>
         <div class="col col-9">
           <ul class="inline-list">
@@ -156,25 +156,53 @@
     <div class="container">
       <div class="row">
         <div class="col col-2">
-          <img class="arrow prev cursor-pointer" src="img/press-arrow-prev.png" alt="이전으로 가기" width="20px" height="36px" >
+          <img class="arrow arrow-prev cursor-pointer" src="img/press-arrow-prev.png" alt="이전으로 가기" width="20px" height="36px" id="arrowPrev">
         </div>
         <div class="col col-8">
-          <div class="slide-container">
-            <h3 class="slide-header">"공짜 프린팅으로 43만 대학생 홀렸죠."</h3>
-            <p class="slide-content">“비싼 등록금과 만만치 않은 생활비 때문에 부담을 느끼는 친구가 참 많잖아요.
-               적어도 공부할 때만큼은 이런 걱정을 떨쳐 버릴 수 있다면 참 좋을 텐데….”</p>
-            <span class="caption">동아일보 - 2015.05.13</span>
+          <div class="inner-section">
+            <div class="slide-container" id="sliderContainer">
+              <div class="carousel-slide">
+                <h3 class="slide-header">"공짜 프린팅으로 43만 대학생 홀렸죠."</h3>
+                <p class="slide-content">“비싼 등록금과 만만치 않은 생활비 때문에 부담을 느끼는 친구가 참 많잖아요.
+                   적어도 공부할 때만큼은 이런 걱정을 떨쳐 버릴 수 있다면 참 좋을 텐데….”</p>
+                <span class="caption">동아일보 - 2015.05.13</span>
+              </div>
+              <div class="carousel-slide">
+                <h3 class="slide-header">"공짜 프린팅으로 143만 대학생 홀렸죠."</h3>
+                <p class="slide-content">“비싼 등록금과 만만치 않은 생활비 때문에 부담을 느끼는 친구가 참 많잖아요.
+                   적어도 공부할 때만큼은 이런 걱정을 떨쳐 버릴 수 있다면 참 좋을 텐데….”</p>
+                <span class="caption">동아일보 - 2015.05.13</span>
+              </div>
+              <div class="carousel-slide">
+                <h3 class="slide-header">"공짜 프린팅으로 243만 대학생 홀렸죠."</h3>
+                <p class="slide-content">“비싼 등록금과 만만치 않은 생활비 때문에 부담을 느끼는 친구가 참 많잖아요.
+                   적어도 공부할 때만큼은 이런 걱정을 떨쳐 버릴 수 있다면 참 좋을 텐데….”</p>
+                <span class="caption">동아일보 - 2015.05.13</span>
+              </div>
+              <div class="carousel-slide">
+                <h3 class="slide-header">"공짜 프린팅으로 343만 대학생 홀렸죠."</h3>
+                <p class="slide-content">“비싼 등록금과 만만치 않은 생활비 때문에 부담을 느끼는 친구가 참 많잖아요.
+                   적어도 공부할 때만큼은 이런 걱정을 떨쳐 버릴 수 있다면 참 좋을 텐데….”</p>
+                <span class="caption">동아일보 - 2015.05.13</span>
+              </div>
+              <div class="carousel-slide">
+                <h3 class="slide-header">"공짜 프린팅으로 443만 대학생 홀렸죠."</h3>
+                <p class="slide-content">“비싼 등록금과 만만치 않은 생활비 때문에 부담을 느끼는 친구가 참 많잖아요.
+                   적어도 공부할 때만큼은 이런 걱정을 떨쳐 버릴 수 있다면 참 좋을 텐데….”</p>
+                <span class="caption">동아일보 - 2015.05.13</span>
+              </div>
+            </div>
           </div>
-          <ol class="wrapper-pagenation">
-            <li class="dots current"></li>
-            <li class="dots"></li>
-            <li class="dots"></li>
-            <li class="dots"></li>
-            <li class="dots"></li>
+          <ol class="wrapper-pagenation" id="dotsContainer">
+            <li data-dots="1" class="dots active"></li>
+            <li data-dots="2" class="dots"></li>
+            <li data-dots="3" class="dots"></li>
+            <li data-dots="4" class="dots"></li>
+            <li data-dots="5" class="dots"></li>
           </ol>
         </div>
         <div class="col col-2">
-          <img class="arrow next cursor-pointer" src="img/press-arrow-next.png" alt="다음으로 가기" width="20px" height="36px" >
+          <img class="arrow arrow-next cursor-pointer" src="img/press-arrow-next.png" alt="다음으로 가기" width="20px" height="36px" id="arrowNext">
         </div>
       </div>
     </div>
