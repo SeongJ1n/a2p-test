@@ -592,6 +592,7 @@ body {
         -moz-border-radius: 1px;
         border-radius: 1px; }
   .nav .hamburger-menu-content {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -600,12 +601,12 @@ body {
     background-color: white;
     overflow: hidden;
     z-index: 5;
-    transition: 0.5s ease all; }
+    transition: 1s ease all; }
     .nav .hamburger-menu-content .inline-list {
       border-bottom: 1px solid #e2e3e6; }
       .nav .hamburger-menu-content .inline-list .list-item {
         width: 100%;
-        padding: 23px 20px 22px 25px !important; }
+        padding: 23px 20px 22px 20px !important; }
       .nav .hamburger-menu-content .inline-list .list-item + .list-item {
         border-top: 1px solid #e2e3e6; }
 

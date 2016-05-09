@@ -83,8 +83,12 @@ $arrowNext.click(function(){
   };
 });
 
+var $hamburgerMenu = $('#hamburgerMenu');
+var $hamburgerContent = $('#hamburgerContent');
 
-
+$hamburgerMenu.click(function(){
+  $hamburgerContent.toggle();
+});
 
 
 
