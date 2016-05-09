@@ -27,7 +27,7 @@ body {
   border-bottom: 1px solid $color-primary;
   z-index: 999;
   .nav-logo {
-    margin-top: 20px;
+    margin-top: 22px;
   }
   .inline-list {
     float: right;
@@ -247,17 +247,15 @@ body {
   .footer-content {
     margin-top: 16px;
   }
-  .footer-list {
+  .footer-list-title {
     margin-top: 40px;
-    font-family: 'font-bold';
-    font-size: 12px;
-    color: $color-lighten;
+  }
+  .footer-list {
+    margin-top: 16px;
     .list-item {
       font-family: 'font-light';
+      font-size: 12px;
       line-height: 1.8em;
-    }
-    .list-item:first-child {
-      margin-top: 16px;
     }
   }
 }
