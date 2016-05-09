@@ -8,6 +8,10 @@ body {
   padding-top: 60px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .divider {
   width: 40px;
   height: 4px;
@@ -140,7 +144,7 @@ body {
 .section-azone {
   .wrapper-map {
     position: relative;
-    max-width: 830px;
+    max-width: 780px;
     margin: 0 auto;
   }
 }
@@ -152,18 +156,18 @@ body {
   height: 400px;
   padding: 0;
   background-color: $background-light;
-  .press-box {
+  .slide-container {
     width: 92%;
     height: 195px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 50px;
     transition: 0.15s ease all;
-    .press-header {
+    .slide-header {
       display: inline-block;
       margin-top: 44px;
       color: $color-dark;
     }
-    .press-content {
+    .slide-content {
       max-width: 510px;
       margin: 0 auto;
       margin-top: 15px;
@@ -174,14 +178,42 @@ body {
       font-family: 'font-bold';
     }
   }
-  .press-box:hover {
+  .slide-container:hover {
     width: 100%;
     height: 215px;
-    margin-top: 65px;
+    margin-top: 45px;
     background-color: white;
     -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.15);
        -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.15);
             box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.15);
+  }
+  .arrow {
+    margin-top: 160px;
+  }
+  .prev {
+      margin-left: 60px;
+  }
+  .next {
+      margin-right: 60px;
+  }
+  .wrapper-pagenation {
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .dots {
+      float: left;
+      width: 8px;
+      height: 8px;
+      margin: 0 4px;
+      -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+              border-radius: 50%;
+      background-color: $color-border;
+    }
+    .current {
+      background-color: $color-dark;
+    }
   }
 }
 
@@ -213,7 +245,7 @@ body {
   padding: 0;
   .col-6 {
     height: 240px;
-    transition: 0.25s ease all;
+    transition: 0.1s ease all;
     .targeting-title {
     display: inline-block;
     margin-top: 94px;
@@ -228,7 +260,7 @@ body {
   }
   }
   .col-6:hover {
-    border-bottom: 4px solid $color-primary;
+    border-bottom: 3px solid $color-primary;
   }
   .col-6+.col-6 {
     border-left: 1px solid $color-border;
