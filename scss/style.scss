@@ -21,6 +21,10 @@ body {
   background-color: $color-border;
 }
 
+.wrapper-btn-download {
+  display: none;
+}
+
 /* GNB */
 .nav {
   position: fixed;
@@ -53,6 +57,10 @@ body {
     .active:hover {
       color: $color-dark;
     }
+  }
+  .hamburger-menu,
+  .hamburger-menu-content {
+    display: none;
   }
 }
 
@@ -255,18 +263,30 @@ body {
   .col-6 {
     height: 240px;
     transition: 0.1s ease all;
+    .wrapper-targeting-ad {
+      position: absolute;
+      right: 0;
+      max-width: 600px;
+      width: 100%;
+    }
+    .wrapper-targeting-printing {
+      position: absolute;
+      left: 0;
+      max-width: 600px;
+      width: 100%;
+    }
     .targeting-title {
     display: inline-block;
     margin-top: 94px;
     color: $color-dark;
-  }
-  .targeting-description {
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-  .targeting-arrow {
-    color: $color-primary;
-  }
+    }
+    .targeting-description {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .targeting-arrow {
+      color: $color-primary;
+    }
   }
   .col-6:hover {
     border-bottom: 3px solid $color-primary;
@@ -302,7 +322,16 @@ body {
 
 
 /*  mobile-device */
-@media only screen and (max-device-width: 480px) {
+
+@media (max-width: 768px) {
+
+  .icon-input {
+    display: none;
+  }
+  .wrapper-btn-download {
+    display: block;
+  }
+
 
   .nav {
     .col-3 {
@@ -314,6 +343,7 @@ body {
         display: none;
       }
       .hamburger-menu {
+        display: block;
         position: absolute;
         top: 10px;
         right: 0;
@@ -349,6 +379,7 @@ body {
       z-index: 5;
       transition: 1s ease all;
       .inline-list {
+        width: 100%;
         border-bottom: 1px solid $color-border;
         .list-item {
           width: 100%;
@@ -359,6 +390,13 @@ body {
         }
       }
     }
+  }
+
+/* section-intro */
+
+  .section-intro {
+
+
   }
 
 /* section-press media */
@@ -376,6 +414,17 @@ body {
 
 /* section-targeting media */
   .section-targeting {
+    .col-6 {
+      height: 170px;
+      .targeting-title {
+        margin-top: 56px;
+      }
+    }
+    .wrapper-targeting-ad,
+    .wrapper-targeting-printing {
+      position: relative !important;
+      margin: 0 auto;
+    }
     .col-6+.col-6 {
       margin-top: -1px;
       border-top: 1px solid $color-border;

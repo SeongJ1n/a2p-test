@@ -79,12 +79,18 @@
   width: 8.333333333333332%;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .col-3 {
-    width: 50%;
+    width: 100%;
   }
   .col-4 {
     width: 100%;

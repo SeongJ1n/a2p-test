@@ -56,7 +56,7 @@ for(a=0; a<=7; a++){
 var left = 0;
 var dots = 1;
 
-var $sliderContainer = $('#sliderContainer');
+var $slideContainer = $('#slideContainer');
 var $dotsContainer = $('#dotsContainer');
 var $arrowNext = $('#arrowNext');
 var $arrowPrev = $('#arrowPrev');
@@ -65,8 +65,9 @@ $arrowPrev.click(function(){
   if( dots > 1 ){
     left = left + 100;
     dots = dots - 1;
-
-    $sliderContainer.css({'left': left + '%'});
+    $slideContainer.animate({
+      left: left + "%"
+    }, 500 );
     $dotsContainer.find('.dots').removeClass('active').end()
       .find('.dots[data-dots=' + dots + ']').addClass('active');
   };
@@ -76,8 +77,9 @@ $arrowNext.click(function(){
   if( dots < 5 ){
     left = left - 100;
     dots = dots + 1;
-
-    $sliderContainer.css({'left': left + '%'});
+    $slideContainer.animate({
+      left: left + "%"
+    }, 500 );
     $dotsContainer.find('.dots').removeClass('active').end()
       .find('.dots[data-dots=' + dots + ']').addClass('active');
   };
@@ -88,9 +90,18 @@ var $hamburgerContent = $('#hamburgerContent');
 
 $hamburgerMenu.click(function(){
   $hamburgerContent.toggle();
+  // $hamburgerContent.toggle(
+  //   function(){
+  //   $hamburgerContent.animate({
+  //     height: "300px"
+  //   }, 100);
+  // },
+  //   function(){
+  //   $hamburgerContent.animate({
+  //     height: "0px"
+  //   }, 100);
+  //   });
 });
-
-
 
 
 
