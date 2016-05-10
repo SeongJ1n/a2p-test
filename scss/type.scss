@@ -183,9 +183,13 @@ p {
   }
   .footer-content,
   .footer-content-bold,
-  .footer-list-title,
-  .footer-list {
+  .footer-list-title {
     font-size: 10px;
+  }
+  .footer-list {
+    .list-item {
+      font-size: 10px;
+    }
   }
 }
 

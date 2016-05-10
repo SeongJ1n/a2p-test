@@ -2,6 +2,7 @@
 @import 'grid';
 @import 'color';
 @import 'type';
+@import 'media';
 @import 'elements/elements';
 
 body {
@@ -109,16 +110,14 @@ body {
 
 /* section-howto */
 .section-howto {
-  .col-4 {
-    .howto-title {
-      margin-top: 25px;
-      color: $color-dark;
-    }
-    .howto-description {
-      max-width: 310px;
-      margin: 0 auto;
-      margin-top: 16px;
-    }
+  .howto-title {
+    margin-top: 25px;
+    color: $color-dark;
+  }
+  .howto-description {
+    max-width: 310px;
+    margin: 0 auto;
+    margin-top: 16px;
   }
 }
 
@@ -334,6 +333,10 @@ body {
 
 
   .nav {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     .col-3 {
       width: 50%;
     }
@@ -392,12 +395,24 @@ body {
     }
   }
 
-/* section-intro */
+/* section-intro media */
 
   .section-intro {
-
-
+    .header {
+      margin-top: 100px;
+    }
   }
+
+
+/* section-howto media */
+
+  .section-howto {
+    .howto-description {
+      max-width: 270px;
+    }
+  }
+
+
 
 /* section-press media */
   .section-press {
