@@ -10,6 +10,13 @@
   display: none;
 }
 
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
 .wrapper-btn-download {
   display: block;
   .col-6 {
@@ -18,12 +25,6 @@
     .btn-download {
       margin: 0;
       padding: 5px;
-    }
-    .left {
-      float: left;
-    }
-    .right {
-      float: right;
     }
   }
 }
@@ -110,13 +111,12 @@
 .section-intro {
   height: 100%;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 85px;
   .wrapper-header {
     .header {
       margin-top: 0;
     }
   }
-
 }
 
 .section-intro-stat {
@@ -159,10 +159,32 @@
 /* section-merit */
 
 .section-merit {
-
+  .col-6 {
+    width: 50%;
+    text-align: left;
+    .merit-img {
+      margin-right: 40px;
+    }
+    .merit-title {
+      margin-top: 15px;
+    }
+    .merit-description {
+      max-width: 160px;
+      margin: 0;
+      margin-top: 6px;
+    }
+  }
+  .col-6 + .col-6 {
+    margin-left: -10px;
+  }
+  .col-3 + .col-3 {
+    margin-top: 30px;
+  }
 }
 
 /* section-map */
+
+
 
 /* section-press */
 .section-press {

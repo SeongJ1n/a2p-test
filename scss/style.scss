@@ -121,27 +121,29 @@ body {
 
 /* section-merit */
 .section-merit {
-  height: 360px;
-  padding: 0;
+  height: 100%;
+  padding-top: 85px;
+  padding-bottom: 90px;
   background: url('../img/section-merit-bg.png') center 0 no-repeat;
-  .wrapper-merit {
-    margin-top: 85px;
-    .merit-img {
-    -webkit-border-radius: 50px;
-       -moz-border-radius: 50px;
-            border-radius: 50px;
-    border: 1px solid $color-darken;
+  background-size: cover;
+    .col-6 {
+      width: 100%;
+      .merit-img {
+      -webkit-border-radius: 50px;
+         -moz-border-radius: 50px;
+              border-radius: 50px;
+      border: 1px solid $color-darken;
+      }
+      .merit-title {
+        margin-top: 20px;
+        color: white;
+      }
+      .merit-description {
+        max-width: 180px;
+        margin: 0 auto;
+        margin-top: 12px;
+      }
     }
-    .merit-title {
-      margin-top: 20px;
-      color: white;
-    }
-    .merit-description {
-      max-width: 180px;
-      margin: 0 auto;
-      margin-top: 12px;
-    }
-  }
 }
 
 /* section-azone */

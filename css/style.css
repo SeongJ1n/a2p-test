@@ -458,20 +458,22 @@ body {
 
 /* section-merit */
 .section-merit {
-  height: 360px;
-  padding: 0;
-  background: url("../img/section-merit-bg.png") center 0 no-repeat; }
-  .section-merit .wrapper-merit {
-    margin-top: 85px; }
-    .section-merit .wrapper-merit .merit-img {
+  height: 100%;
+  padding-top: 85px;
+  padding-bottom: 90px;
+  background: url("../img/section-merit-bg.png") center 0 no-repeat;
+  background-size: cover; }
+  .section-merit .col-6 {
+    width: 100%; }
+    .section-merit .col-6 .merit-img {
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
       border-radius: 50px;
       border: 1px solid #1b1d23; }
-    .section-merit .wrapper-merit .merit-title {
+    .section-merit .col-6 .merit-title {
       margin-top: 20px;
       color: white; }
-    .section-merit .wrapper-merit .merit-description {
+    .section-merit .col-6 .merit-description {
       max-width: 180px;
       margin: 0 auto;
       margin-top: 12px; }
@@ -618,6 +620,12 @@ body {
   .icon-input {
     display: none; }
 
+  .left {
+    float: left; }
+
+  .right {
+    float: right; }
+
   .wrapper-btn-download {
     display: block; }
     .wrapper-btn-download .col-6 {
@@ -626,10 +634,6 @@ body {
       .wrapper-btn-download .col-6 .btn-download {
         margin: 0;
         padding: 5px; }
-      .wrapper-btn-download .col-6 .left {
-        float: left; }
-      .wrapper-btn-download .col-6 .right {
-        float: right; }
 
   .section {
     padding-top: 40px;
@@ -696,7 +700,7 @@ body {
   .section-intro {
     height: 100%;
     padding-top: 80px;
-    padding-bottom: 80px; }
+    padding-bottom: 85px; }
     .section-intro .wrapper-header .header {
       margin-top: 0; }
 
@@ -727,6 +731,22 @@ body {
     margin-top: 10px; }
 
   /* section-merit */
+  .section-merit .col-6 {
+    width: 50%;
+    text-align: left; }
+    .section-merit .col-6 .merit-img {
+      margin-right: 40px; }
+    .section-merit .col-6 .merit-title {
+      margin-top: 15px; }
+    .section-merit .col-6 .merit-description {
+      max-width: 160px;
+      margin: 0;
+      margin-top: 6px; }
+  .section-merit .col-6 + .col-6 {
+    margin-left: -10px; }
+  .section-merit .col-3 + .col-3 {
+    margin-top: 30px; }
+
   /* section-map */
   /* section-press */
   .section-press .arrow-prev {
