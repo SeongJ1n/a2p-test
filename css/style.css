@@ -256,11 +256,12 @@ p {
     line-height: 1.2em; }
 
   h2, h3 {
-    font-size: 26px; }
+    font-size: 26px;
+    line-height: 1.4em; }
 
   h4 {
     font-size: 16px;
-    line-height: 1.4em; }
+    line-height: 1.2em; }
 
   p {
     font-size: 14px; }
@@ -306,6 +307,7 @@ img {
   width: 100%;
   height: 500px;
   margin: 0 auto;
+  border: 1px solid #e2e3e6;
   background-color: #fbfcfc; }
 
 /* 맵 마커 */
@@ -340,6 +342,9 @@ img {
   border-width: 8px;
   margin-left: -8px; }
 
+@media (max-width: 768px) {
+  .section-azone #map {
+    height: 300px; } }
 .list {
   position: absolute;
   width: 100%;
@@ -486,7 +491,6 @@ body {
 
 /* section-press */
 .section-press {
-  height: 400px;
   padding: 0;
   background-color: #fbfcfc; }
   .section-press .inner-section {
@@ -735,9 +739,11 @@ body {
     width: 50%;
     text-align: left; }
     .section-merit .col-6 .merit-img {
+      width: 90px;
+      height: 90px;
       margin-right: 40px; }
     .section-merit .col-6 .merit-title {
-      margin-top: 15px; }
+      margin-top: 12px; }
     .section-merit .col-6 .merit-description {
       max-width: 160px;
       margin: 0;
@@ -747,14 +753,33 @@ body {
   .section-merit .col-3 + .col-3 {
     margin-top: 30px; }
 
-  /* section-map */
+  /* section-aznone */
+  .section-azone .box {
+    display: none; }
+
   /* section-press */
-  .section-press .arrow-prev {
-    margin-left: 0; }
-  .section-press .arrow-next {
-    margin-right: 0; }
-  .section-press .wrapper-pagenation {
-    bottom: 40px; }
+  .section-press {
+    padding-top: 0; }
+    .section-press .inner-section .slide-container .carousel-slide .slide-header {
+      width: 100%;
+      height: 2.8em;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .section-press .inner-section .slide-container .carousel-slide .slide-content {
+      width: 90%;
+      height: 4.8em;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .section-press .arrow {
+      margin-top: 180px; }
+    .section-press .arrow-prev {
+      float: left;
+      margin-left: 0px; }
+    .section-press .arrow-next {
+      float: right;
+      margin-right: 0px; }
+    .section-press .wrapper-pagenation {
+      bottom: 40px; }
 
   /* section-join */
   .section-join {

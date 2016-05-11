@@ -163,10 +163,12 @@
     width: 50%;
     text-align: left;
     .merit-img {
+      width: 90px;
+      height: 90px;
       margin-right: 40px;
     }
     .merit-title {
-      margin-top: 15px;
+      margin-top: 12px;
     }
     .merit-description {
       max-width: 160px;
@@ -182,17 +184,46 @@
   }
 }
 
-/* section-map */
+/* section-aznone */
 
+.section-azone {
+  .box {
+    display: none;
+  }
+}
 
 
 /* section-press */
 .section-press {
+  padding-top: 0;
+  .inner-section {
+    .slide-container {
+      .carousel-slide {
+        .slide-header {
+          width: 100%;
+          height: 2.8em;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .slide-content {
+          width: 90%;
+          height: 4.8em;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  .arrow {
+    margin-top: 180px;
+  }
   .arrow-prev {
-    margin-left: 0;
+    float: left;
+    margin-left: 0px;
   }
   .arrow-next {
-    margin-right: 0;
+    float: right;
+    margin-right: 0px;
   }
   .wrapper-pagenation {
     bottom: 40px;
