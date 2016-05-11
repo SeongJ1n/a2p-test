@@ -634,9 +634,11 @@ body {
   .section {
     padding-top: 40px;
     padding-bottom: 40px; }
+    .section .subtitle {
+      margin-top: 8px; }
 
   .divider {
-    margin-bottom: 45px; }
+    margin-bottom: 35px; }
 
   /* nav */
   .nav .container {
@@ -713,8 +715,16 @@ body {
       margin-top: 4px; }
 
   /* section-howto */
+  .section-howto .col-4 + .col-4 {
+    margin-top: 40px; }
+  .section-howto .howto-img {
+    width: 230px;
+    height: 180px; }
+  .section-howto .howto-title {
+    margin-top: 15px; }
   .section-howto .howto-description {
-    max-width: 270px; }
+    max-width: 270px;
+    margin-top: 10px; }
 
   /* section-press */
   .section-press .arrow-prev {
@@ -733,17 +743,19 @@ body {
       margin-top: 0; }
 
   /* section-targeting */
-  .section-targeting .col-6 {
-    height: 170px; }
-    .section-targeting .col-6 .targeting-title {
-      margin-top: 60px; }
-  .section-targeting .wrapper-targeting-ad,
-  .section-targeting .wrapper-targeting-printing {
-    position: relative !important;
-    margin: 0 auto; }
-  .section-targeting .col-6 + .col-6 {
-    margin-top: -1px;
-    border-top: 1px solid #e2e3e6; }
+  .section-targeting {
+    padding: 0; }
+    .section-targeting .col-6 {
+      height: 170px; }
+      .section-targeting .col-6 .targeting-title {
+        margin-top: 60px; }
+    .section-targeting .wrapper-targeting-ad,
+    .section-targeting .wrapper-targeting-printing {
+      position: relative !important;
+      margin: 0 auto; }
+    .section-targeting .col-6 + .col-6 {
+      margin-top: -1px;
+      border-top: 1px solid #e2e3e6; }
 
   /* footer */
   .footer {
