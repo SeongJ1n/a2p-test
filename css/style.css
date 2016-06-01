@@ -420,6 +420,20 @@ img {
   .nav .hamburger-menu-content {
     display: none; }
 
+.scroll-nav {
+  background-color: white;
+  border-bottom: 1px solid #ff004e;
+  transition: .3s ease all; }
+  .scroll-nav .nav-logo {
+    background: url("../img/logo.png");
+    background-size: cover; }
+  .scroll-nav .inline-list .list-item {
+    color: #a7aab1; }
+  .scroll-nav .inline-list .list-item:hover {
+    color: #272b38; }
+  .scroll-nav .inline-list .active {
+    color: #272b38; }
+
 /* Section Default */
 .section {
   position: relative;

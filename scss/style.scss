@@ -62,6 +62,27 @@
   }
 }
 
+.scroll-nav {
+  background-color: white;
+  border-bottom: 1px solid $color-primary;
+  transition: .3s ease all;
+  .nav-logo {
+    background: url('../img/logo.png');
+    background-size: cover;
+  }
+  .inline-list {
+    .list-item {
+      color: $color-lighten;
+    }
+    .list-item:hover {
+      color: $color-dark;
+    }
+    .active {
+      color: $color-dark;
+    }
+  }
+}
+
 /* Section Default */
 .section {
   position: relative;

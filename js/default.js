@@ -17,7 +17,7 @@ $(document).ready(function () {
   else {
     $sectionIntro.height(300);
     $header.css(
-      'margin-top', 100);
+      'margin-top', 90);
   }
 });
 
@@ -38,15 +38,28 @@ $(window).on('resize', function(){
   else {
     $sectionIntro.height(300);
     $header.css(
-      'margin-top', 100);
+      'margin-top', 90);
   }
 });
 
+/* nav 스크롤 */
 
-// $(window).on('resize', function(){
-//       var $win = $(this); //this = window
-//       var $sectionIntro = $('#sectionIntro');
-// });
+$(window).scroll(function() {
+  var winWidth = $(window).width();
+  var winHeight = $(window).height();
+  var $nav = $('#nav');
+    if(winWidth >= 768){
+      if ($nav.offset().top > winHeight+50) {
+          $nav.addClass("scroll-nav");
+      }
+      else {
+          $nav.removeClass("scroll-nav");
+      }
+    }
+});
+
+
+/* 대학 코드, 위도 경도 셋팅 */
 
 var univ = '007030';
 
