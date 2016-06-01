@@ -28,6 +28,7 @@
   width: 100%;
   height: 60px;
   z-index: 1000;
+  transition: .3s ease all;
   .nav-logo {
     width: 119px;
     height: 16px;
@@ -65,7 +66,6 @@
 .scroll-nav {
   background-color: white;
   border-bottom: 1px solid $color-primary;
-  transition: .3s ease all;
   .nav-logo {
     background: url('../img/logo.png');
     background-size: cover;
