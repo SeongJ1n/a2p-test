@@ -395,6 +395,10 @@ img {
   height: 60px;
   z-index: 1000; }
   .nav .nav-logo {
+    width: 119px;
+    height: 16px;
+    background: url("../img/logo-white.png");
+    background-size: cover;
     margin-top: 22px; }
   .nav .inline-list {
     float: right; }
@@ -644,6 +648,18 @@ img {
 
   .right {
     float: right; }
+
+  .nav {
+    background-color: white; }
+    .nav .nav-logo {
+      background: url("../img/logo.png");
+      background-size: cover; }
+    .nav .inline-list .list-item {
+      color: #a7aab1; }
+    .nav .inline-list .list-item:hover {
+      color: #272b38; }
+    .nav .inline-list .active {
+      color: #272b38; }
 
   .wrapper-btn-download {
     display: block; }

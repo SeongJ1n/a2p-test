@@ -17,7 +17,7 @@ $(document).ready(function () {
   else {
     $sectionIntro.height(300);
     $header.css(
-      'margin-top', 80);
+      'margin-top', 100);
   }
 });
 
@@ -38,7 +38,7 @@ $(window).on('resize', function(){
   else {
     $sectionIntro.height(300);
     $header.css(
-      'margin-top', 80);
+      'margin-top', 100);
   }
 });
 

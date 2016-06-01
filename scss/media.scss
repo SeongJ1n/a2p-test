@@ -17,6 +17,25 @@
   float: right;
 }
 
+.nav {
+  background-color: white;
+  .nav-logo {
+    background: url('../img/logo.png');
+    background-size: cover;
+  }
+  .inline-list {
+    .list-item {
+      color: $color-lighten;
+    }
+    .list-item:hover {
+      color: $color-dark;
+    }
+    .active {
+      color: $color-dark;
+    }
+  }
+}
+
 .wrapper-btn-download {
   display: block;
   .col-6 {
