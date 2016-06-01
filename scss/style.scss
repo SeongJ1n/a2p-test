@@ -4,10 +4,6 @@
 @import 'type';
 @import 'elements/elements';
 
-body {
-  padding-top: 60px;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -31,8 +27,6 @@ body {
   top: 0;
   width: 100%;
   height: 60px;
-  background-color: white;
-  border-bottom: 1px solid $color-primary;
   z-index: 1000;
   .nav-logo {
     margin-top: 22px;
@@ -43,8 +37,8 @@ body {
       float: left;
       font-family: 'font-regular';
       font-size: 14px;
-      padding: 22px 0px 23px 45px;
-      color: $color-lighten;
+      padding: 24px 0px 23px 45px;
+      color: rgba(255,255,255,.3);
       transition: .15s all ease;
     }
     .list-item:hover {
@@ -52,10 +46,10 @@ body {
     }
     .active {
       font-family: 'font-bold';
-      color: $color-dark;
+      color: white;
     }
     .active:hover {
-      color: $color-dark;
+      color: $color-primary;
     }
   }
   .hamburger-menu,
@@ -77,16 +71,36 @@ body {
 
 /* section-intro */
 .section-intro {
-  height: 630px;
+  height: 778px;
   padding: 0;
-  background: url('../img/section-intro-bg.png') center 0 no-repeat;
+  background: url('../img/section-intro-bg.png');
+  background-size: cover;
+  background-position: center;
   .wrapper-header{
     .header {
-      margin-top: 190px;
+      margin-top: 279px;
     }
     .header-description {
       margin-top: 10px;
+      font-family: 'font-light';
+      font-size: 18px;
+      color: white;
+    }
+    .div-download {
+      width: 220px;
+      height: 48px;
+      margin: 0 auto;
+      margin-top: 24px;
       font-family: 'font-regular';
+      font-size: 16px;
+      line-height: 44px;
+      border: 1px solid white;
+      border-radius: 24px;
+      color: white;
+      transition: .2s ease all;
+    }
+    .div-download:hover {
+      background-color: rgba(255,255,255,.2);
     }
     .icon-input {
       margin-top: 34px;
@@ -94,9 +108,10 @@ body {
   }
 }
 
+
 .section-intro-stat {
   position: absolute;
-  top: 590px;left: 0;
+  top: 678px; left: 0;
   width: 100%;
   height: 100px;
   padding: 23px 0;

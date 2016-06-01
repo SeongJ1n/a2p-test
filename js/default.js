@@ -1,3 +1,53 @@
+/* section-intro 높이 조절 */
+
+$(document).ready(function () {
+  var winWidth = $(window).width();
+  var winHeight = $(window).height();
+  var $sectionIntro = $('#sectionIntro');
+  var $header = $('#header');
+  var $introStat = $('#introStat');
+  $sectionIntro.height(winHeight+100);
+
+  if(winWidth >= 768){
+  $header.css(
+    'margin-top', winHeight/2-60);
+  $introStat.css(
+    'top', winHeight);
+  }
+  else {
+    $sectionIntro.height(300);
+    $header.css(
+      'margin-top', 80);
+  }
+});
+
+$(window).on('resize', function(){
+  var winWidth = $(window).width();
+  var winHeight = $(window).height();
+  var $sectionIntro = $('#sectionIntro');
+  var $header = $('#header');
+  var $introStat = $('#introStat');
+  $sectionIntro.height(winHeight+100);
+
+  if(winWidth >= 768){
+  $header.css(
+    'margin-top', winHeight/2-60);
+  $introStat.css(
+    'top', winHeight);
+  }
+  else {
+    $sectionIntro.height(300);
+    $header.css(
+      'margin-top', 80);
+  }
+});
+
+
+// $(window).on('resize', function(){
+//       var $win = $(this); //this = window
+//       var $sectionIntro = $('#sectionIntro');
+// });
+
 var univ = '007030';
 
 var latitude = coord_data[univ][0].latitude;

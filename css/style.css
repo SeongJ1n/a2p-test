@@ -166,7 +166,7 @@ body {
   color: #464a53; }
 
 h1 {
-  font-family: 'font-regular';
+  font-family: 'font-bold';
   font-size: 48px;
   letter-spacing: -.03em;
   color: white; }
@@ -313,7 +313,6 @@ img {
   width: 100%;
   height: 500px;
   margin: 0 auto;
-  border: 1px solid #e2e3e6;
   background-color: #fbfcfc; }
 
 /* 맵 마커 */
@@ -348,9 +347,6 @@ img {
   border-width: 8px;
   margin-left: -8px; }
 
-@media (max-width: 768px) {
-  .section-azone #map {
-    height: 300px; } }
 .list {
   position: absolute;
   width: 100%;
@@ -377,9 +373,6 @@ img {
     font-family: 'font-bold';
     color: #ff004e; }
 
-body {
-  padding-top: 60px; }
-
 .cursor-pointer {
   cursor: pointer; }
 
@@ -400,8 +393,6 @@ body {
   top: 0;
   width: 100%;
   height: 60px;
-  background-color: white;
-  border-bottom: 1px solid #ff004e;
   z-index: 1000; }
   .nav .nav-logo {
     margin-top: 22px; }
@@ -411,16 +402,16 @@ body {
       float: left;
       font-family: 'font-regular';
       font-size: 14px;
-      padding: 22px 0px 23px 45px;
-      color: #a7aab1;
+      padding: 24px 0px 23px 45px;
+      color: rgba(255, 255, 255, 0.3);
       transition: .15s all ease; }
     .nav .inline-list .list-item:hover {
       color: #7e8187; }
     .nav .inline-list .active {
       font-family: 'font-bold';
-      color: #272b38; }
+      color: white; }
     .nav .inline-list .active:hover {
-      color: #272b38; }
+      color: #ff004e; }
   .nav .hamburger-menu,
   .nav .hamburger-menu-content {
     display: none; }
@@ -436,20 +427,38 @@ body {
 
 /* section-intro */
 .section-intro {
-  height: 630px;
+  height: 778px;
   padding: 0;
-  background: url("../img/section-intro-bg.png") center 0 no-repeat; }
+  background: url("../img/section-intro-bg.png");
+  background-size: cover;
+  background-position: center; }
   .section-intro .wrapper-header .header {
-    margin-top: 190px; }
+    margin-top: 279px; }
   .section-intro .wrapper-header .header-description {
     margin-top: 10px;
-    font-family: 'font-regular'; }
+    font-family: 'font-light';
+    font-size: 18px;
+    color: white; }
+  .section-intro .wrapper-header .div-download {
+    width: 220px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 24px;
+    font-family: 'font-regular';
+    font-size: 16px;
+    line-height: 44px;
+    border: 1px solid white;
+    border-radius: 24px;
+    color: white;
+    transition: .2s ease all; }
+  .section-intro .wrapper-header .div-download:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
   .section-intro .wrapper-header .icon-input {
     margin-top: 34px; }
 
 .section-intro-stat {
   position: absolute;
-  top: 590px;
+  top: 678px;
   left: 0;
   width: 100%;
   height: 100px;
@@ -627,7 +636,7 @@ body {
   .mobile {
     display: block; }
 
-  .icon-input {
+  .icon-input, .div-download {
     display: none; }
 
   .left {
